@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.BEd.Listeners.TestListener" />
+
+	</listeners>
+
+	<test name="Test">
+		<classes>
+
+			<class name="com.BEd.Tests.PrintFunctionalityBeforeEdit" />
+			<class name="com.BEd.Tests.GraduationMarksComparison" />
+			<class name="com.BEd.Tests.PGMarksComparison" />
+			<class name="com.BEd.Tests.YOPComparisons12thGraduation" />
+			<class name="com.BEd.Tests.YOPComparisonsGraduationPG" />
+			<class
+				name="com.BEd.Tests.EligibilityCriteriaForGeneralScience" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForGeneralArts" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForGeneralBTech" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSCScience" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSCArts" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSCBtech" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSTScience" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSTArts" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSTBTech" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSEBCArts" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSEBCScience" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForSEBCBtech" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForPHArts" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForPHScience" />
+			<class name="com.BEd.Tests.EligibilityCriteriaForPHBtech" />
+			
+			<class name="com.BEd.Tests.PrintFunctionalityAfterEdit" />
+
+
+		</classes>
+		
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

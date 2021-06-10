@@ -1,0 +1,4494 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CSM Automation Report </title>
+        <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+        <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+	    <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@6fbbd1c32fbc2463d026da5c6ce2e9eef0d29512/spark/css/spark-style.css" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+
+        
+            .report-name { padding-left: 20px; } .report-name > img { float: 
+      left;height: 100%;margin-left: 30px;margin-top:1px;width: 16%;background-color:#FFFFFF }
+     
+        
+		
+</style></head>    <script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa -report dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="vheader">
+        <div class="nav-logo">
+          <a href="#">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">
+    
+            <img src='D:\SAMSBEdCAFEdit\Logo\csmlogo.png'/>
+        
+		</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">May 10, 2021 10:27:16 am</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>            <div class="vcontainer">
+                <div class="main-content">
+<div class="test-wrapper row test-view">
+	<div class="test-list">
+		<div class="test-list-tools">
+			<ul class="tools pull-left">
+				<li>
+					<a href="">
+					<span class="font-size-14">Tests</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
+						
+						
+						
+						
+						<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="test-list-wrapper scrollable">
+			<ul class="test-list-item">
+				<li class="test-item"  status="pass" test-id="1"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 14s+180ms</p>
+							<span class="datetime">10:27:22 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:27:22</span>
+									<span class='badge badge-danger'>05.10.2021 10:27:36</span>
+									<span class='badge badge-default'>0h 0m 14s+180ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:27:36 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="2"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">PrintFunctionality</p>
+							<p class="duration text-sm">0h 0m 3s+425ms</p>
+							<span class="datetime">10:27:36 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">PrintFunctionality</h5>
+									<span class='badge badge-success'>05.10.2021 10:27:36</span>
+									<span class='badge badge-danger'>05.10.2021 10:27:40</span>
+									<span class='badge badge-default'>0h 0m 3s+425ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:27:40 am</td>
+				<td>
+						Testcase: PrintFunctionality is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="3"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+236ms</p>
+							<span class="datetime">10:27:46 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:27:46</span>
+									<span class='badge badge-danger'>05.10.2021 10:28:01</span>
+									<span class='badge badge-default'>0h 0m 15s+236ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:28:01 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="4"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIslessthanMaxMark</p>
+							<p class="duration text-sm">0h 0m 4s+854ms</p>
+							<span class="datetime">10:28:01 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIslessthanMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:28:01</span>
+									<span class='badge badge-danger'>05.10.2021 10:28:06</span>
+									<span class='badge badge-default'>0h 0m 4s+854ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:04 am</td>
+				<td>
+						Enter Obtained Mark Is less than MaxMark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:06 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:06 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is less than Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:28:06 am</td>
+				<td>
+						Testcase: ObtainedMarkIslessthanMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="5"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIsEqualToMaxMark</p>
+							<p class="duration text-sm">0h 0m 10s+932ms</p>
+							<span class="datetime">10:28:06 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIsEqualToMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:28:06</span>
+									<span class='badge badge-danger'>05.10.2021 10:28:17</span>
+									<span class='badge badge-default'>0h 0m 10s+932ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:15 am</td>
+				<td>
+						Enter Obtained Mark Equal to Max Mark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:17 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:17 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is Equal To Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:28:17 am</td>
+				<td>
+						Testcase: ObtainedMarkIsEqualToMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="6"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIsGreaterThanMaxMark</p>
+							<p class="duration text-sm">0h 0m 11s+269ms</p>
+							<span class="datetime">10:28:17 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIsGreaterThanMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:28:17</span>
+									<span class='badge badge-danger'>05.10.2021 10:28:29</span>
+									<span class='badge badge-default'>0h 0m 11s+269ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:25 am</td>
+				<td>
+						Enter Obtained Mark greater than Max Mark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:28 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:28:29 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is Greater Than Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:28:29 am</td>
+				<td>
+						Testcase: ObtainedMarkIsGreaterThanMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="7"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 17s+870ms</p>
+							<span class="datetime">10:28:33 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:28:33</span>
+									<span class='badge badge-danger'>05.10.2021 10:28:51</span>
+									<span class='badge badge-default'>0h 0m 17s+870ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:28:51 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="8"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIslessthanMaxMark</p>
+							<p class="duration text-sm">0h 0m 11s+695ms</p>
+							<span class="datetime">10:28:51 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIslessthanMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:28:51</span>
+									<span class='badge badge-danger'>05.10.2021 10:29:03</span>
+									<span class='badge badge-default'>0h 0m 11s+695ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:00 am</td>
+				<td>
+						Enter Obtained Mark less than Max Mark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:03 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:03 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is less than Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:29:03 am</td>
+				<td>
+						Testcase: ObtainedMarkIslessthanMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="9"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIsEqualToMaxMark</p>
+							<p class="duration text-sm">0h 0m 18s+819ms</p>
+							<span class="datetime">10:29:03 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIsEqualToMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:29:03</span>
+									<span class='badge badge-danger'>05.10.2021 10:29:22</span>
+									<span class='badge badge-default'>0h 0m 18s+819ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:19 am</td>
+				<td>
+						Enter Obtained Mark equal to Max Mark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:22 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:22 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is Equal To Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:29:22 am</td>
+				<td>
+						Testcase: ObtainedMarkIsEqualToMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="10"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ObtainedMarkIsGreaterThanMaxMark</p>
+							<p class="duration text-sm">0h 0m 16s+286ms</p>
+							<span class="datetime">10:29:22 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ObtainedMarkIsGreaterThanMaxMark</h5>
+									<span class='badge badge-success'>05.10.2021 10:29:22</span>
+									<span class='badge badge-danger'>05.10.2021 10:29:38</span>
+									<span class='badge badge-default'>0h 0m 16s+286ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:34 am</td>
+				<td>
+						Enter Obtained Mark greater than Max Mark
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:37 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:29:38 am</td>
+				<td>
+						Successfully Checked Obtained Mark Is Greater Than Max Mark scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:29:38 am</td>
+				<td>
+						Testcase: ObtainedMarkIsGreaterThanMaxMark is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="11"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 17s+864ms</p>
+							<span class="datetime">10:29:42 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:29:42</span>
+									<span class='badge badge-danger'>05.10.2021 10:30:00</span>
+									<span class='badge badge-default'>0h 0m 17s+864ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:30:00 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="12"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetween12thAndGraduationWithValidData</p>
+							<p class="duration text-sm">0h 0m 13s+829ms</p>
+							<span class="datetime">10:30:00 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetween12thAndGraduationWithValidData</h5>
+									<span class='badge badge-success'>05.10.2021 10:30:00</span>
+									<span class='badge badge-danger'>05.10.2021 10:30:14</span>
+									<span class='badge badge-default'>0h 0m 13s+829ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:01 am</td>
+				<td>
+						Entering valid YOP for Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:14 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:14 am</td>
+				<td>
+						Successfully Checked YOP Between 12th And Graduation with valid data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:30:14 am</td>
+				<td>
+						Testcase: YOPBetween12thAndGraduationWithValidData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="13"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetween12thAndGraduationWithDiffLessThan3years</p>
+							<p class="duration text-sm">0h 0m 20s+565ms</p>
+							<span class="datetime">10:30:14 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetween12thAndGraduationWithDiffLessThan3years</h5>
+									<span class='badge badge-success'>05.10.2021 10:30:14</span>
+									<span class='badge badge-danger'>05.10.2021 10:30:35</span>
+									<span class='badge badge-default'>0h 0m 20s+565ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:22 am</td>
+				<td>
+						Entering YOP with difference of less than a year
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:35 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:35 am</td>
+				<td>
+						Successfully Checked YOP Between 12th And Graduation with Difference less than 2 years scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:30:35 am</td>
+				<td>
+						Testcase: YOPBetween12thAndGraduationWithDiffLessThan3years is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="14"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetween12thAndGraduationWithIdenticalData</p>
+							<p class="duration text-sm">0h 0m 20s+647ms</p>
+							<span class="datetime">10:30:35 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetween12thAndGraduationWithIdenticalData</h5>
+									<span class='badge badge-success'>05.10.2021 10:30:35</span>
+									<span class='badge badge-danger'>05.10.2021 10:30:55</span>
+									<span class='badge badge-default'>0h 0m 20s+647ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:42 am</td>
+				<td>
+						Entering YOP for Graduation same as 12th
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:55 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:30:55 am</td>
+				<td>
+						Successfully Checked YOP Between 12th And Graduation with Identical data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:30:55 am</td>
+				<td>
+						Testcase: YOPBetween12thAndGraduationWithIdenticalData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="15"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetween12thAndGraduationWithInvalidData</p>
+							<p class="duration text-sm">0h 0m 20s+716ms</p>
+							<span class="datetime">10:30:55 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetween12thAndGraduationWithInvalidData</h5>
+									<span class='badge badge-success'>05.10.2021 10:30:55</span>
+									<span class='badge badge-danger'>05.10.2021 10:31:16</span>
+									<span class='badge badge-default'>0h 0m 20s+716ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:03 am</td>
+				<td>
+						Entering YOP for Graduation as less than 12th
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:16 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:16 am</td>
+				<td>
+						Successfully Checked YOP Between 12th And Graduation with Invalid data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:31:16 am</td>
+				<td>
+						Testcase: YOPBetween12thAndGraduationWithInvalidData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="16"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 18s+180ms</p>
+							<span class="datetime">10:31:24 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:31:24</span>
+									<span class='badge badge-danger'>05.10.2021 10:31:43</span>
+									<span class='badge badge-default'>0h 0m 18s+180ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:31:43 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="17"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetweenGraduationAndPGWithValidData</p>
+							<p class="duration text-sm">0h 0m 13s+827ms</p>
+							<span class="datetime">10:31:43 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetweenGraduationAndPGWithValidData</h5>
+									<span class='badge badge-success'>05.10.2021 10:31:43</span>
+									<span class='badge badge-danger'>05.10.2021 10:31:56</span>
+									<span class='badge badge-default'>0h 0m 13s+827ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:44 am</td>
+				<td>
+						Entering valid YOP for Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:50 am</td>
+				<td>
+						Entering valid YOP for PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:56 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:31:56 am</td>
+				<td>
+						Successfully Checked YOP Between Graduation And PG with valid data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:31:56 am</td>
+				<td>
+						Testcase: YOPBetweenGraduationAndPGWithValidData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="18"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetweenGraduationAndPGWithDiffLessThan3years</p>
+							<p class="duration text-sm">0h 0m 20s+552ms</p>
+							<span class="datetime">10:31:56 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetweenGraduationAndPGWithDiffLessThan3years</h5>
+									<span class='badge badge-success'>05.10.2021 10:31:56</span>
+									<span class='badge badge-danger'>05.10.2021 10:32:17</span>
+									<span class='badge badge-default'>0h 0m 20s+552ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:11 am</td>
+				<td>
+						Entering YOP with difference of less than 2 year
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:17 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:17 am</td>
+				<td>
+						Successfully Checked YOP Between Graduation And PG with Difference less than 2 years scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:32:17 am</td>
+				<td>
+						Testcase: YOPBetweenGraduationAndPGWithDiffLessThan3years is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="19"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetweenGraduationAndPGWithIdenticalData</p>
+							<p class="duration text-sm">0h 0m 20s+489ms</p>
+							<span class="datetime">10:32:17 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetweenGraduationAndPGWithIdenticalData</h5>
+									<span class='badge badge-success'>05.10.2021 10:32:17</span>
+									<span class='badge badge-danger'>05.10.2021 10:32:37</span>
+									<span class='badge badge-default'>0h 0m 20s+489ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:31 am</td>
+				<td>
+						Entering YOP for PG same as Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:37 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:37 am</td>
+				<td>
+						Successfully Checked YOP Between Graduation And PG with Identical data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:32:37 am</td>
+				<td>
+						Testcase: YOPBetweenGraduationAndPGWithIdenticalData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="20"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">YOPBetweenGraduationAndPGWithInvalidData</p>
+							<p class="duration text-sm">0h 0m 20s+717ms</p>
+							<span class="datetime">10:32:37 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">YOPBetweenGraduationAndPGWithInvalidData</h5>
+									<span class='badge badge-success'>05.10.2021 10:32:37</span>
+									<span class='badge badge-danger'>05.10.2021 10:32:58</span>
+									<span class='badge badge-default'>0h 0m 20s+717ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:52 am</td>
+				<td>
+						Entering YOP for PG as less than Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:58 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:32:58 am</td>
+				<td>
+						Successfully Checked YOP Between Graduation And PG with Invalid data scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:32:58 am</td>
+				<td>
+						Testcase: YOPBetweenGraduationAndPGWithInvalidData is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="21"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+629ms</p>
+							<span class="datetime">10:33:02 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:33:02</span>
+									<span class='badge badge-danger'>05.10.2021 10:33:18</span>
+									<span class='badge badge-default'>0h 0m 15s+629ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:33:18 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="22"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithMoreThan50PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 12s+786ms</p>
+							<span class="datetime">10:33:18 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithMoreThan50PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:33:18</span>
+									<span class='badge badge-danger'>05.10.2021 10:33:31</span>
+									<span class='badge badge-default'>0h 0m 12s+786ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:28 am</td>
+				<td>
+						Entering more than 50 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:31 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:31 am</td>
+				<td>
+						Successfully checked Science With More Than 50 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:33:31 am</td>
+				<td>
+						Testcase: ScienceWithMoreThan50PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="23"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithLessThan50PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 19s+763ms</p>
+							<span class="datetime">10:33:31 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithLessThan50PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:33:31</span>
+									<span class='badge badge-danger'>05.10.2021 10:33:51</span>
+									<span class='badge badge-default'>0h 0m 19s+763ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:48 am</td>
+				<td>
+						Entering less than 50 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:51 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:33:51 am</td>
+				<td>
+						Successfully checked Science With less than 50 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:33:51 am</td>
+				<td>
+						Testcase: ScienceWithLessThan50PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="24"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+444ms</p>
+							<span class="datetime">10:33:55 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:33:55</span>
+									<span class='badge badge-danger'>05.10.2021 10:34:11</span>
+									<span class='badge badge-default'>0h 0m 15s+444ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:34:11 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="25"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithMoreThan50PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 5s+913ms</p>
+							<span class="datetime">10:34:11 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithMoreThan50PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:34:11</span>
+									<span class='badge badge-danger'>05.10.2021 10:34:17</span>
+									<span class='badge badge-default'>0h 0m 5s+913ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:14 am</td>
+				<td>
+						Entering more than 50 percentage marks in Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:17 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:17 am</td>
+				<td>
+						Successfully checked Arts With More Than 50 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:34:17 am</td>
+				<td>
+						Testcase: ArtsWithMoreThan50PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="26"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithLessThan50PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 12s+757ms</p>
+							<span class="datetime">10:34:17 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithLessThan50PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:34:17</span>
+									<span class='badge badge-danger'>05.10.2021 10:34:30</span>
+									<span class='badge badge-default'>0h 0m 12s+757ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:27 am</td>
+				<td>
+						Entering less than 50 percentage marks
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:30 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:30 am</td>
+				<td>
+						Successfully checked Arts With less than 50 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:34:30 am</td>
+				<td>
+						Testcase: ArtsWithLessThan50PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="27"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+250ms</p>
+							<span class="datetime">10:34:34 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:34:34</span>
+									<span class='badge badge-danger'>05.10.2021 10:34:50</span>
+									<span class='badge badge-default'>0h 0m 15s+250ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:34:50 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="28"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithMoreThan55Percentage</p>
+							<p class="duration text-sm">0h 0m 9s+145ms</p>
+							<span class="datetime">10:34:50 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithMoreThan55Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:34:50</span>
+									<span class='badge badge-danger'>05.10.2021 10:34:59</span>
+									<span class='badge badge-default'>0h 0m 9s+145ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:56 am</td>
+				<td>
+						Entering more than 55 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:59 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:34:59 am</td>
+				<td>
+						Successfully checked Btech With More Than 55 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:34:59 am</td>
+				<td>
+						Testcase: BtechWithMoreThan55Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="29"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithLessThan55Percentage</p>
+							<p class="duration text-sm">0h 0m 15s+968ms</p>
+							<span class="datetime">10:34:59 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithLessThan55Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:34:59</span>
+									<span class='badge badge-danger'>05.10.2021 10:35:15</span>
+									<span class='badge badge-default'>0h 0m 15s+968ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:12 am</td>
+				<td>
+						Entering less than 55 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:15 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:15 am</td>
+				<td>
+						Successfully checked Btech With less than 55 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:35:15 am</td>
+				<td>
+						Testcase: BtechWithLessThan55Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="30"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+246ms</p>
+							<span class="datetime">10:35:19 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:35:19</span>
+									<span class='badge badge-danger'>05.10.2021 10:35:35</span>
+									<span class='badge badge-default'>0h 0m 15s+246ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:35:35 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="31"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithMoreThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 12s+649ms</p>
+							<span class="datetime">10:35:35 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithMoreThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:35:35</span>
+									<span class='badge badge-danger'>05.10.2021 10:35:47</span>
+									<span class='badge badge-default'>0h 0m 12s+649ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:45 am</td>
+				<td>
+						Entering more than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:47 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:35:47 am</td>
+				<td>
+						Successfully checked Science With More Than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:35:47 am</td>
+				<td>
+						Testcase: ScienceWithMoreThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="32"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithLessThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 19s+544ms</p>
+							<span class="datetime">10:35:47 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithLessThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:35:47</span>
+									<span class='badge badge-danger'>05.10.2021 10:36:07</span>
+									<span class='badge badge-default'>0h 0m 19s+544ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:04 am</td>
+				<td>
+						Entering less than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:07 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:07 am</td>
+				<td>
+						Successfully checked Science With less than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:36:07 am</td>
+				<td>
+						Testcase: ScienceWithLessThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="33"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+612ms</p>
+							<span class="datetime">10:36:12 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:36:12</span>
+									<span class='badge badge-danger'>05.10.2021 10:36:27</span>
+									<span class='badge badge-default'>0h 0m 15s+612ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:36:27 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="34"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithMoreThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 5s+897ms</p>
+							<span class="datetime">10:36:27 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithMoreThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:36:27</span>
+									<span class='badge badge-danger'>05.10.2021 10:36:33</span>
+									<span class='badge badge-default'>0h 0m 5s+897ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:31 am</td>
+				<td>
+						Entering more than 50 percentage marks in Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:33 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:33 am</td>
+				<td>
+						Successfully checked Arts With More Than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:36:33 am</td>
+				<td>
+						Testcase: ArtsWithMoreThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="35"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithLessThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 12s+546ms</p>
+							<span class="datetime">10:36:33 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithLessThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:36:33</span>
+									<span class='badge badge-danger'>05.10.2021 10:36:46</span>
+									<span class='badge badge-default'>0h 0m 12s+546ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:43 am</td>
+				<td>
+						Entering less than 45 percentage marks
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:46 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:36:46 am</td>
+				<td>
+						Successfully checked Arts With less than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:36:46 am</td>
+				<td>
+						Testcase: ArtsWithLessThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="36"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+449ms</p>
+							<span class="datetime">10:36:51 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:36:51</span>
+									<span class='badge badge-danger'>05.10.2021 10:37:06</span>
+									<span class='badge badge-default'>0h 0m 15s+449ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:37:06 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="37"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithMoreThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 5s+891ms</p>
+							<span class="datetime">10:37:06 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithMoreThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:37:06</span>
+									<span class='badge badge-danger'>05.10.2021 10:37:12</span>
+									<span class='badge badge-default'>0h 0m 5s+891ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:10 am</td>
+				<td>
+						Entering more than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:12 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:12 am</td>
+				<td>
+						Successfully checked Btech With More Than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:37:12 am</td>
+				<td>
+						Testcase: BtechWithMoreThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="38"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithLessThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 12s+832ms</p>
+							<span class="datetime">10:37:12 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithLessThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:37:12</span>
+									<span class='badge badge-danger'>05.10.2021 10:37:25</span>
+									<span class='badge badge-default'>0h 0m 12s+832ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:22 am</td>
+				<td>
+						Entering less than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:25 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:25 am</td>
+				<td>
+						Successfully checked Btech With less than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:37:25 am</td>
+				<td>
+						Testcase: BtechWithLessThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="39"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 16s+108ms</p>
+							<span class="datetime">10:37:30 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:37:30</span>
+									<span class='badge badge-danger'>05.10.2021 10:37:46</span>
+									<span class='badge badge-default'>0h 0m 16s+108ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:37:46 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="40"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithMoreThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 12s+742ms</p>
+							<span class="datetime">10:37:46 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithMoreThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:37:46</span>
+									<span class='badge badge-danger'>05.10.2021 10:37:58</span>
+									<span class='badge badge-default'>0h 0m 12s+742ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:56 am</td>
+				<td>
+						Entering more than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:58 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:37:58 am</td>
+				<td>
+						Successfully checked Science With More Than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:37:58 am</td>
+				<td>
+						Testcase: ScienceWithMoreThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="41"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithLessThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 19s+876ms</p>
+							<span class="datetime">10:37:58 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithLessThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:37:58</span>
+									<span class='badge badge-danger'>05.10.2021 10:38:18</span>
+									<span class='badge badge-default'>0h 0m 19s+876ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:16 am</td>
+				<td>
+						Entering less than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:18 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:18 am</td>
+				<td>
+						Successfully checked Science With less than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:38:18 am</td>
+				<td>
+						Testcase: ScienceWithLessThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="42"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 16s+299ms</p>
+							<span class="datetime">10:38:26 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:38:26</span>
+									<span class='badge badge-danger'>05.10.2021 10:38:42</span>
+									<span class='badge badge-default'>0h 0m 16s+299ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:38:42 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="43"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithMoreThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 5s+891ms</p>
+							<span class="datetime">10:38:42 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithMoreThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:38:42</span>
+									<span class='badge badge-danger'>05.10.2021 10:38:48</span>
+									<span class='badge badge-default'>0h 0m 5s+891ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:45 am</td>
+				<td>
+						Entering more than 50 percentage marks in Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:48 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:48 am</td>
+				<td>
+						Successfully checked Arts With More Than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:38:48 am</td>
+				<td>
+						Testcase: ArtsWithMoreThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="44"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithLessThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 12s+910ms</p>
+							<span class="datetime">10:38:48 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithLessThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:38:48</span>
+									<span class='badge badge-danger'>05.10.2021 10:39:01</span>
+									<span class='badge badge-default'>0h 0m 12s+910ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:38:58 am</td>
+				<td>
+						Entering less than 45 percentage marks
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:01 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:01 am</td>
+				<td>
+						Successfully checked Arts With less than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:39:01 am</td>
+				<td>
+						Testcase: ArtsWithLessThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="45"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 16s+134ms</p>
+							<span class="datetime">10:39:08 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:39:08</span>
+									<span class='badge badge-danger'>05.10.2021 10:39:24</span>
+									<span class='badge badge-default'>0h 0m 16s+134ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:39:24 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="46"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithMoreThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 5s+926ms</p>
+							<span class="datetime">10:39:24 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithMoreThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:39:24</span>
+									<span class='badge badge-danger'>05.10.2021 10:39:30</span>
+									<span class='badge badge-default'>0h 0m 5s+926ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:27 am</td>
+				<td>
+						Entering more than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:30 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:30 am</td>
+				<td>
+						Successfully checked Btech With More Than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:39:30 am</td>
+				<td>
+						Testcase: BtechWithMoreThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="47"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithLessThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 13s+132ms</p>
+							<span class="datetime">10:39:30 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithLessThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:39:30</span>
+									<span class='badge badge-danger'>05.10.2021 10:39:43</span>
+									<span class='badge badge-default'>0h 0m 13s+132ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:40 am</td>
+				<td>
+						Entering less than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:43 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:39:43 am</td>
+				<td>
+						Successfully checked Btech With less than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:39:43 am</td>
+				<td>
+						Testcase: BtechWithLessThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="48"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 17s+340ms</p>
+							<span class="datetime">10:39:49 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:39:49</span>
+									<span class='badge badge-danger'>05.10.2021 10:40:06</span>
+									<span class='badge badge-default'>0h 0m 17s+340ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:40:06 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="49"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithMoreThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 6s+9ms</p>
+							<span class="datetime">10:40:06 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithMoreThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:40:06</span>
+									<span class='badge badge-danger'>05.10.2021 10:40:12</span>
+									<span class='badge badge-default'>0h 0m 6s+9ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:10 am</td>
+				<td>
+						Entering more than 50 percentage marks in Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:12 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:12 am</td>
+				<td>
+						Successfully checked Arts With More Than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:40:12 am</td>
+				<td>
+						Testcase: ArtsWithMoreThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="50"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithLessThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 12s+919ms</p>
+							<span class="datetime">10:40:12 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithLessThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:40:12</span>
+									<span class='badge badge-danger'>05.10.2021 10:40:25</span>
+									<span class='badge badge-default'>0h 0m 12s+919ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:22 am</td>
+				<td>
+						Entering less than 45 percentage marks
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:25 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:25 am</td>
+				<td>
+						Successfully checked Arts With less than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:40:25 am</td>
+				<td>
+						Testcase: ArtsWithLessThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="51"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 16s+269ms</p>
+							<span class="datetime">10:40:30 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:40:30</span>
+									<span class='badge badge-danger'>05.10.2021 10:40:46</span>
+									<span class='badge badge-default'>0h 0m 16s+269ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:40:46 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="52"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithMoreThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 12s+670ms</p>
+							<span class="datetime">10:40:46 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithMoreThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:40:46</span>
+									<span class='badge badge-danger'>05.10.2021 10:40:59</span>
+									<span class='badge badge-default'>0h 0m 12s+670ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:57 am</td>
+				<td>
+						Entering more than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:59 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:40:59 am</td>
+				<td>
+						Successfully checked Science With More Than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:40:59 am</td>
+				<td>
+						Testcase: ScienceWithMoreThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="53"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithLessThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 19s+697ms</p>
+							<span class="datetime">10:40:59 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithLessThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:40:59</span>
+									<span class='badge badge-danger'>05.10.2021 10:41:19</span>
+									<span class='badge badge-default'>0h 0m 19s+697ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:16 am</td>
+				<td>
+						Entering less than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:19 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:19 am</td>
+				<td>
+						Successfully checked Science With less than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:41:19 am</td>
+				<td>
+						Testcase: ScienceWithLessThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="54"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 16s+723ms</p>
+							<span class="datetime">10:41:26 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:41:26</span>
+									<span class='badge badge-danger'>05.10.2021 10:41:43</span>
+									<span class='badge badge-default'>0h 0m 16s+723ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:41:43 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="55"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithMoreThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 5s+877ms</p>
+							<span class="datetime">10:41:43 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithMoreThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:41:43</span>
+									<span class='badge badge-danger'>05.10.2021 10:41:49</span>
+									<span class='badge badge-default'>0h 0m 5s+877ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:46 am</td>
+				<td>
+						Entering more than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:49 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:49 am</td>
+				<td>
+						Successfully checked Btech With More Than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:41:49 am</td>
+				<td>
+						Testcase: BtechWithMoreThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="56"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithLessThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 12s+977ms</p>
+							<span class="datetime">10:41:49 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithLessThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:41:49</span>
+									<span class='badge badge-danger'>05.10.2021 10:42:02</span>
+									<span class='badge badge-default'>0h 0m 12s+977ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:41:59 am</td>
+				<td>
+						Entering less than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:02 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:02 am</td>
+				<td>
+						Successfully checked Btech With less than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:42:02 am</td>
+				<td>
+						Testcase: BtechWithLessThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="57"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+563ms</p>
+							<span class="datetime">10:42:07 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:42:07</span>
+									<span class='badge badge-danger'>05.10.2021 10:42:22</span>
+									<span class='badge badge-default'>0h 0m 15s+563ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:42:22 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="58"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithMoreThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 5s+888ms</p>
+							<span class="datetime">10:42:22 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithMoreThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:42:22</span>
+									<span class='badge badge-danger'>05.10.2021 10:42:28</span>
+									<span class='badge badge-default'>0h 0m 5s+888ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:26 am</td>
+				<td>
+						Entering more than 50 percentage marks in Graduation
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:28 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:28 am</td>
+				<td>
+						Successfully checked Arts With More Than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:42:28 am</td>
+				<td>
+						Testcase: ArtsWithMoreThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="59"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ArtsWithLessThan45PercentageInGraduation</p>
+							<p class="duration text-sm">0h 0m 12s+623ms</p>
+							<span class="datetime">10:42:28 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ArtsWithLessThan45PercentageInGraduation</h5>
+									<span class='badge badge-success'>05.10.2021 10:42:28</span>
+									<span class='badge badge-danger'>05.10.2021 10:42:41</span>
+									<span class='badge badge-default'>0h 0m 12s+623ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:38 am</td>
+				<td>
+						Entering less than 45 percentage marks
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:41 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:42:41 am</td>
+				<td>
+						Successfully checked Arts With less than 45 Percentage In Graduation scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:42:41 am</td>
+				<td>
+						Testcase: ArtsWithLessThan45PercentageInGraduation is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="60"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 19s+483ms</p>
+							<span class="datetime">10:42:48 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:42:48</span>
+									<span class='badge badge-danger'>05.10.2021 10:43:07</span>
+									<span class='badge badge-default'>0h 0m 19s+483ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:43:07 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="61"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithMoreThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 12s+968ms</p>
+							<span class="datetime">10:43:07 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithMoreThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:43:07</span>
+									<span class='badge badge-danger'>05.10.2021 10:43:20</span>
+									<span class='badge badge-default'>0h 0m 12s+968ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:17 am</td>
+				<td>
+						Entering more than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:20 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:20 am</td>
+				<td>
+						Successfully checked Science With More Than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:43:20 am</td>
+				<td>
+						Testcase: ScienceWithMoreThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="62"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">ScienceWithLessThan45PercentageInPG</p>
+							<p class="duration text-sm">0h 0m 19s+263ms</p>
+							<span class="datetime">10:43:20 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">ScienceWithLessThan45PercentageInPG</h5>
+									<span class='badge badge-success'>05.10.2021 10:43:20</span>
+									<span class='badge badge-danger'>05.10.2021 10:43:39</span>
+									<span class='badge badge-default'>0h 0m 19s+263ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:37 am</td>
+				<td>
+						Entering less than 45 percentage marks in PG
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:39 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:43:39 am</td>
+				<td>
+						Successfully checked Science With less than 45 Percentage In PG scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:43:39 am</td>
+				<td>
+						Testcase: ScienceWithLessThan45PercentageInPG is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="63"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 15s+710ms</p>
+							<span class="datetime">10:43:43 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:43:43</span>
+									<span class='badge badge-danger'>05.10.2021 10:43:59</span>
+									<span class='badge badge-default'>0h 0m 15s+710ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:43:59 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="64"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithMoreThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 5s+901ms</p>
+							<span class="datetime">10:43:59 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithMoreThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:43:59</span>
+									<span class='badge badge-danger'>05.10.2021 10:44:05</span>
+									<span class='badge badge-default'>0h 0m 5s+901ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:03 am</td>
+				<td>
+						Entering more than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:05 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:05 am</td>
+				<td>
+						Successfully checked Btech With More Than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:44:05 am</td>
+				<td>
+						Testcase: BtechWithMoreThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="65"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">BtechWithLessThan50Percentage</p>
+							<p class="duration text-sm">0h 0m 12s+724ms</p>
+							<span class="datetime">10:44:05 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">BtechWithLessThan50Percentage</h5>
+									<span class='badge badge-success'>05.10.2021 10:44:05</span>
+									<span class='badge badge-danger'>05.10.2021 10:44:18</span>
+									<span class='badge badge-default'>0h 0m 12s+724ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:15 am</td>
+				<td>
+						Entering less than 50 percentage marks in Btech
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:18 am</td>
+				<td>
+						Assertion of Expected & Actual Result
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>10:44:18 am</td>
+				<td>
+						Successfully checked Btech With less than 50 Percentage scenario
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:44:18 am</td>
+				<td>
+						Testcase: BtechWithLessThan50Percentage is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="66"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">Login</p>
+							<p class="duration text-sm">0h 0m 14s+44ms</p>
+							<span class="datetime">10:44:22 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">Login</h5>
+									<span class='badge badge-success'>05.10.2021 10:44:22</span>
+									<span class='badge badge-danger'>05.10.2021 10:44:36</span>
+									<span class='badge badge-default'>0h 0m 14s+44ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:44:36 am</td>
+				<td>
+						Testcase: Login is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+				<li class="test-item"  status="pass" test-id="67"
+					author=""
+					tag=""
+					device="">
+					<div class="status-avatar pass-bg">
+						<i class="fa fa-check text-white"></i>
+					</div>
+					<div class="open-test">
+						<div class="test-detail">
+							<p class="name">PrintFunctionality</p>
+							<p class="duration text-sm">0h 0m 3s+63ms</p>
+							<span class="datetime">10:44:36 am</span>
+						</div>
+					</div>
+					<div class="test-contents d-none">
+						<div class="detail-head">
+							<div class="p-v-10 d-inline-block">
+								<div class="info">
+									<h5 class="test-status text-pass">PrintFunctionality</h5>
+									<span class='badge badge-success'>05.10.2021 10:44:36</span>
+									<span class='badge badge-danger'>05.10.2021 10:44:39</span>
+									<span class='badge badge-default'>0h 0m 3s+63ms</span>
+								</div>
+								<div class="m-t-10 m-l-5">
+									
+								</div>
+							</div>
+						</div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>10:44:39 am</td>
+				<td>
+						Testcase: PrintFunctionality is Passed.
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="test-content scrollable">
+		<div class="test-content-tools">
+			<ul>
+				<li>
+					<a class="back-to-test" href="javascript:void(0)">
+					<i class="fa fa-arrow-left"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="test-content-detail">
+			<div class="detail-body"></div>
+		</div>
+	</div>
+</div>                    <!-- dashboard -->
+<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Tests</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='parent-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='100%'>
+						<b>67</b> tests passed
+						</small>
+					</div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> tests failed, 
+						<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Log events</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id='events-analysis' width='115' height='90'></canvas>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div><small data-tooltip='33.5%'><b>67</b> events passed</small></div>
+					<div>
+						<small data-tooltip='0%'><b>0</b> events failed, 
+						<b data-tooltip='66.5%'>133</b> others
+						</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Tests</h6>
+							<h2 class="font-size-28 font-weight-light mt-3">67</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+							<span>100.00%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Start</h6>
+							<h4 class="font-weight-light mt-4">May 10, 2021 10:27:16 am</h4>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+					<div class="media justify-content-between">
+						<div class="card-header">
+							<h6 class="card-title">Duration</h6>
+							<h4 class="font-weight-light mt-4">0h 17m 23s+660ms</h4>
+							<span class="text-semibold font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 opacity-01"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Timeline</h6>
+				</div>
+				<div class="card-body">
+					<div class="">
+						<canvas id="timeline" height="120"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Environment</h6>
+				</div>
+				<div class="table-overflow">
+					<table class="table table-sm">
+						<thead>
+							<tr class="bg-gray">
+								<th>Name</th>
+								<th>Value</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Executed on OS:</td>
+								<td>Windows 10</td>
+							</tr>
+							<tr>
+								<td>Executed by User:</td>
+								<td>user</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	var statusGroup = {
+	    parentCount: 67,
+		passParent: 67,
+		failParent: 0,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 0,
+		childCount: 0,
+		passChild: 0,
+		failChild: 0,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 0,
+		grandChildCount: 0,
+		passGrandChild: 0,
+		failGrandChild: 0,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 0,
+		eventsCount: 200,
+		passEvents: 67,
+		failEvents: 0,
+		fatalEvents: 0,
+		errorEvents: 0,
+		warningEvents: 0,
+		skipEvents: 0,
+		infoEvents: 133,
+		debugEvents: 0,
+		exceptionsEvents: 0
+	};
+</script>
+<script>
+	var timeline = {
+	        "Login":14.18,"PrintFunctionality":3.425,"Login":15.236,"ObtainedMarkIslessthanMaxMark":4.854,"ObtainedMarkIsEqualToMaxMark":10.932,"ObtainedMarkIsGreaterThanMaxMark":11.269,"Login":17.87,"ObtainedMarkIslessthanMaxMark":11.695,"ObtainedMarkIsEqualToMaxMark":18.819,"ObtainedMarkIsGreaterThanMaxMark":16.286,"Login":17.864,"YOPBetween12thAndGraduationWithValidData":13.829,"YOPBetween12thAndGraduationWithDiffLessThan3years":20.565,"YOPBetween12thAndGraduationWithIdenticalData":20.647,"YOPBetween12thAndGraduationWithInvalidData":20.716,"Login":18.18,"YOPBetweenGraduationAndPGWithValidData":13.827,"YOPBetweenGraduationAndPGWithDiffLessThan3years":20.552,"YOPBetweenGraduationAndPGWithIdenticalData":20.489,"YOPBetweenGraduationAndPGWithInvalidData":20.717,"Login":15.629,"ScienceWithMoreThan50PercentageInPG":12.786,"ScienceWithLessThan50PercentageInPG":19.763,"Login":15.444,"ArtsWithMoreThan50PercentageInGraduation":5.913,"ArtsWithLessThan50PercentageInGraduation":12.757,"Login":15.25,"BtechWithMoreThan55Percentage":9.145,"BtechWithLessThan55Percentage":15.968,"Login":15.246,"ScienceWithMoreThan45PercentageInPG":12.649,"ScienceWithLessThan45PercentageInPG":19.544,"Login":15.612,"ArtsWithMoreThan45PercentageInGraduation":5.897,"ArtsWithLessThan45PercentageInGraduation":12.546,"Login":15.449,"BtechWithMoreThan50Percentage":5.891,"BtechWithLessThan50Percentage":12.832,"Login":16.108,"ScienceWithMoreThan45PercentageInPG":12.742,"ScienceWithLessThan45PercentageInPG":19.876,"Login":16.299,"ArtsWithMoreThan45PercentageInGraduation":5.891,"ArtsWithLessThan45PercentageInGraduation":12.91,"Login":16.134,"BtechWithMoreThan50Percentage":5.926,"BtechWithLessThan50Percentage":13.132,"Login":17.34,"ArtsWithMoreThan45PercentageInGraduation":6.009,"ArtsWithLessThan45PercentageInGraduation":12.919,"Login":16.269,"ScienceWithMoreThan45PercentageInPG":12.67,"ScienceWithLessThan45PercentageInPG":19.697,"Login":16.723,"BtechWithMoreThan50Percentage":5.877,"BtechWithLessThan50Percentage":12.977,"Login":15.563,"ArtsWithMoreThan45PercentageInGraduation":5.888,"ArtsWithLessThan45PercentageInGraduation":12.623,"Login":19.483,"ScienceWithMoreThan45PercentageInPG":12.968,"ScienceWithLessThan45PercentageInPG":19.263,"Login":15.71,"BtechWithMoreThan50Percentage":5.901,"BtechWithLessThan50Percentage":12.724,"Login":14.044,"PrintFunctionality":3.063
+	};
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ac7abbc71b4bb073da00153a5a3fdbcfe0c95e2a/spark/js/spark-script.js"></script>
+<script type="text/javascript">
+
+
+        
+            $(document).ready(function() {
+           
+             $(".logo-content").hide();
+     
+                 
+
+            });
+        
+
+		
+</script></body>
+</html>
